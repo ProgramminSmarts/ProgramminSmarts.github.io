@@ -25,6 +25,8 @@ function warning() {
   alert("By clicking 'Ok' or choosing to exit this message, you agree to the following terms:\nI am not responsible for this game impeding in your work or learning, and the intent of this game was not to distract you either. Please play on your discretion!\n-Harshul ");
 }
 
+document.addEventListener('keydown', spacebar);
+
 function spacebar(e) {
   if(e.keyCode == 32) {
     clicked();
@@ -42,7 +44,6 @@ function clicked () {
   update();
 
 }
-onkeyup = spacebar;
 
 function chest() {
   document.createElement("div");
