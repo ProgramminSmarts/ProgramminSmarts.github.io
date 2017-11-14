@@ -1,0 +1,55 @@
+﻿<head>
+  <link rel="stylesheet" type="text/css" href="css.css">
+  <script type="text/javascript" src="js.js"></script>
+
+  <title>Hershey Clicker</title>
+</head>
+
+<body onload="setInterval(addingCPS, 1000); spacebar();warning();">
+<img src="https://orig00.deviantart.net/4c3f/f/2008/059/f/0/brown_gradient_by_keff85.png" id = "backgroundClick"></img>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Hershey%27s_Milk_Chocolate_wrapper_%282012-2015%29.png" id = "bar" onClick = "clicked()"></img>
+
+  <p id = "chipsDisp">0 Chocolate Chips</p>
+  <p id = "cpsDisp">CPS: 0</p>
+  <p id = "cpcDisp">CPC: 1</p>
+
+<button onclick = "openTab('Shop')" id = "shopNav">Shop</button>
+<button onclick = "openTab('Upgrades')" id = "upgradeNav">Upgrades</button>
+<button onclick = "openTab('Treasures')" id = "treasureNav">Treasures</button>
+  <div id = "blackBorder"></div>
+    <div id = "guys"></div>
+    <div id = "Shop" class = "tab">
+  
+      <div id = "factory" onclick = "buyFactory()">
+        <p id = "factoryName" class = "shopText">Factory</p>
+        <p id = "factoryCost" class = "shopText">Cost: 60 Chocolate Chips</p>
+        <p id = "factoryCPS" class = "shopText">+1 Chip Per Second</p>
+        <p id = "numbFactories">0</p>
+      </div>
+  
+      <div id = "worker" onclick = "buyWorker()">
+        <p id = "workerName" class = "shopText">Worker</p>
+        <p id = "workerCost" class = "shopText">Cost: 225 Chocolate Chips</p>
+        <p id = "workerCPS" class = "shopText">+4 Chips Per Second</p>
+        <p id = "numbWorkers">0</p>
+      </div>
+</div>
+
+<div id = "Upgrades" class = "tab" style="display:none">
+  <div id = "upgrade" onclick = "addingCPC()">
+        <p id = "upgradeTitle">Upgrade</p>
+        <p id = "upgradeCost">Cost: 650 Chocolate Chips</p>
+        <p id = "upgradeDescrip">+1 Chip Per Click</p>
+     </div>
+</div>
+ 
+<div id = "Treasures" class = "tab" style="display:none">
+  <div id = "chanceClick">
+        <p id = "chanceDescrip">Buying this each time will give you a 1 more percent chance of doubling what you get per click.</p>
+        <p id = "currentChance">Current Chance: 1%</p>
+        <p id = "chanceCost">Cost: 500 Chocolate Chips</p>
+     </div>
+</div>
+  
+     
+</body>
