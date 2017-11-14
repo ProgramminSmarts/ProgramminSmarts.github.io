@@ -134,7 +134,7 @@ function info() {
   else if (q1 == "Manual" || q1 == "manual") {
     alert("How to play:\n   To get points, or chocolate chips, you have to click the Hershey Bar. It displays your score with 'Score: Chocolate Chips'. Underneath that, it says CPS and CPC. They stand for Chips Per Second and Chips Per Click. The CPS means that you get a certain amount of chips every second. The CPC means the amounts of chips you get everytime you click. You can upgrade both of these with the shop.");
   }
-  else if (q1 == null) {
+  else if (q1 === null) {
     return;
   }
   else {
