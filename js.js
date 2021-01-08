@@ -1,4 +1,4 @@
-var chest = document.getElementById("chest").innerHTML;
+//var chest = document.getElementById("chest").innerHTML;
 
 var score = 0;
 var cpc = 1;
@@ -25,6 +25,7 @@ function warning() {
   alert("By clicking 'Ok' or choosing to exit this message, you agree to the following terms:\nI am not responsible for this game impeding in your work or learning, and the intent of this game was not to distract you either. Please play on your discretion!\n-Harshul ");
 }
 
+
 document.addEventListener('keydown', spacebar);
 
 function spacebar(e) {
@@ -32,6 +33,7 @@ function spacebar(e) {
     clicked();
   }
 }
+
 function clicked () {
   var randNumb = Math.random()*100+1;
   if (randNumb>doubleChance) {
@@ -40,9 +42,7 @@ function clicked () {
   else {
     score+=cpc;
   }
-
   update();
-
 }
 
 function chest() {
@@ -127,6 +127,7 @@ function openTab (tabName) {
   }
   document.getElementById(tabName).style.display = "block";
 }
+/*
 function info() {
   var q1 = prompt("What do you need help with? \n    Manual\n    Shop  \n   Upgrades\n   Treasures");
   if (q1 == "treasures" || q1 == "Treasures") {
@@ -142,4 +143,4 @@ function info() {
     alert("Please enter one of the options given for more information about the topic.");
     info();
   }
-}
+} */
